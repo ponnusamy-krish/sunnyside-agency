@@ -3,14 +3,16 @@ let ham = document.getElementById("hamenu")
 
 
 hampic.addEventListener("click", ()=>{
-
+    if(ham.style.display == "none" ){
+        
+        ham.style.display="block"
+    }
    
-    if(ham.style.visibility == "visible"){
-        ham.style.visibility = "hidden"
+   else if(ham.style.display == "block" ){
+        ham.style.display = "none"
+       
     }
-    else if(ham.style.visibility == "hidden"){
-        ham.style.visibility = "visible"
-    }
+   
 })
 // document.addEventListener("click" ,()=>{
 //     ham.style.visibility = "hidden"
